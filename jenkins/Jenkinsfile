@@ -1,8 +1,8 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3.9.6-eclipse-temurin-17'
-            args '-v /root/.m2:/root/.m2'
+    agent any
+        tools {
+            jdk 'java9'
+            maven 'maven'
         }
     }
     options {
@@ -30,4 +30,3 @@ pipeline {
             }
         }
     }
-}
