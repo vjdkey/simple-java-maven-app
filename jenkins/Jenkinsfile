@@ -28,11 +28,6 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh' 
             }
         }
-        stage('Final Result') {
-            steps {
-                echo "Working"
-            }
-        }
 
     }
 }
